@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario de Usuario</title>
+
+	<link rel="stylesheet" type="text/css" href="estilo2.css">
+</head>
+<body>
+
+	
+	<div id="container">
+
+		<h1>Datos de Usuario</h1>
+
+		<form>
+
+			<label for="nombre">Nombre Completo:</label>
+			<input type="text" name="nombre" required>
+
+			<label for>Correo Electrónico</label>
+			<input type="email" name="correo" required>
+
+			<label for="contra">Contraseña:</label>
+			<input type="password" name="contra" required>
+
+			<label for="dob">Fecha de Nacimiento:</label>
+			<input type="date" name="dob">
+
+			<label for="tel">Teléfono:</label>
+			<input type="number" name="">
+
+			<label>Género:</label>
+			<div class="radios">
+				
+				<input type="radio" name="genero" value="masculino"><label>Masculino</label>
+				<br>
+				<input type="radio" name="genero" value="femenenino"><label>Femenino</label>
+				<br>
+				<input type="radio" name="genero" value="otro"><label>Otro</label>
+
+			</div>
+			
+			<label>Estado:</label>
+			<select>
+				<option value="">seleccionar:</option>
+				<option value="sonora">Sonora</option>
+				<option value="sonora">Sinaloa</option>
+				<option value="sonora">Baja California</option>
+			</select>
+
+			<label>Imagen de Perfil:</label>
+			<input type="file" name="perfil" accept="image/*">
+
+			<label>Biografía:</label>
+			<textarea>
+				
+			</textarea>
+
+			<input type="checkbox" name="aceptar">Acepto los términos y condiciones
+			<button type="submit">REGISTRAR</button>
+
+		</form>
+
+
+	</div>
+	
+</body>
+</html>
